@@ -48,15 +48,16 @@
 
   header > div#logoAndButton{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 100px;
     cursor: pointer;
 
   }
 
   header > div#logoAndButton > img#logoImg{
-    display: none;
+    
   }
+  
 
   header > nav > ul{
     list-style-type: none;
@@ -71,9 +72,10 @@
 div#listDiv > div#searchDiv{
   display: flex;
   justify-content: center;
+  
   align-items: center;
   
-  width: 50%;
+  width: 55%;
   height: 60px;
   margin-bottom: 40px;
   border-radius: 10px;
@@ -82,15 +84,54 @@ div#listDiv > div#searchDiv{
   background-color: var(--light-green);
 }
 
-div#listDiv > li{
+div#listDiv > div#searchDiv > li{
+  display: none;
+}
+
+div#listDiv > div.itensList{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  
+  width: 50%;
   margin-bottom: 60px;
+}
+
+div#listDiv > div.itensList > li{
+  display: none;
+}
+
+
+
+
+
+div#listDiv > div#searchDiv:hover{
+  transform: translate(2px, -2px);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+div#listDiv > div.itensList:hover{
+  transform: translate(2px, -2px);
+  transition-duration: 0.3s;
   cursor: pointer;
 }
 
 div#logOut{
   display: flex;
   justify-content: space-evenly;
-  cursor: pointer;
+  
+  position: relative;
+  top: 10px;
+  left: -10px;
+  width: 30vw;
+  height: 80px;
+  padding-top: 10px;
+  
+  background-color: var(--light-green);
+  
+  
 }
 
 div#logOut > img#userPic{
@@ -101,8 +142,14 @@ div#logOut > div#paragraphs{
   display: none;
 }
 
+div#logOut > img#logOutImg:hover{
+  transform: translate(2px, -2px);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
 main{
-  padding: 0px 10px;
+  padding: 5px 10px;
 
 }
 

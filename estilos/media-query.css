@@ -1,0 +1,54 @@
+@charset 'UTF-8';
+
+@media screen and (min-width: 768px){
+    
+    div#listDiv > div#searchDiv{
+        display: flex;
+        justify-content: left;
+        gap: 10%;
+        padding-left: 10px;
+    }
+
+    div#listDiv > div#searchDiv > li{
+        display: flex;
+    }
+
+    div#listDiv > div.itensList{
+        display: flex;
+        justify-content: left;
+        gap: 10%;
+    }
+
+    div#listDiv > div.itensList > li{
+        display: flex;
+     }
+
+     div#LogOut{
+        display: flex;
+        justify-content: left;
+        
+     }
+
+    div#logOut > img#userPic{
+        display: flex;
+
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+      }
+      
+      div#logOut > div#paragraphs{
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+        left: -10px;
+        font-weight: bold;
+      }
+      
+      div#logOut > img#logOutImg:hover{
+        transform: translate(2px, -2px);
+        transition-duration: 0.3s;
+        cursor: pointer;
+      }
+}

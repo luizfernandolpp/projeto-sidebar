@@ -1,0 +1,198 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+      --light-grey: #dce4e3;
+    --text-color: #084236;
+
+    --poppins: 'Poppins', 'sans-serif';
+  }
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body,html{
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: var(--body-bg-color);
+
+    font-family: var(--poppins);
+    font-size: 1em;
+
+  }
+
+  main{
+    width : 100vw;
+    height: 100vh;
+  }
+
+  main > div#SideBar{
+    width: 20vw;
+    height: 100vh;
+
+    background-color: var(--green);
+
+    transition: width 0.3s;
+    transition-timing-function: ease;
+  }
+
+  main > div#SideBar > nav > div#logo{
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    margin: 15px
+  }
+
+  main > div#SideBar > nav > div#menu{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 20vw;
+    cursor: pointer;
+
+    transform: translate(-35px, 5px);
+    transition: left 0.3s;
+    transition-timing-function: ease;
+  
+}
+
+
+main > div#SideBar > nav > ul{
+    list-style-type: none;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+main > div#SideBar > nav > ul > li{
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+main > div#SideBar > nav > ul > li#search{
+  margin-bottom: 20px;
+  
+}
+
+main > div#SideBar > nav > ul > li#search > div{
+  width: 100%;
+  height: 60px;
+  margin-left: -10px;
+  padding: 14px 10px;
+
+  border-radius: 10px;
+
+  background-color: var(--light-green);
+}
+
+main > div#SideBar > nav > ul > li#search > div > input#isearch{
+  width: 80%;
+  height: 40px;
+  position: relative;
+  left: -5px;
+  
+  
+  
+  
+  border: none; 
+  background-color: var(--light-green);
+
+  font-family: var(--poppins);
+  font-size: 1em;
+  text-indent: 5px;
+  cursor: pointer;
+
+}
+
+main > div#SideBar > nav > ul > li > div > img{
+  margin-right: 10px;
+  
+  transform: translateY(5px);
+}
+
+li > img{
+    margin-right: 10px;
+    
+    transform: translateY(5px);
+}
+
+main > h1{
+  position: absolute;
+  top: 0%;
+  left: 21vw;
+
+  font-family: var(--poppins);
+  color: var(--text-color);
+
+  transition: left 0.3s;
+  transition-timing-function: ease;
+}
+
+main > div#SideBar > nav > div#logOut{
+  width: 20vw;
+  height: 100px;
+
+  background-color: var(--light-green);
+
+  position: absolute;
+  top: 865px;
+}
+
+div#logOut > img#userImg{
+  width: 80px;
+  height: 80px;
+  margin: 5px 10px;
+
+  border-radius: 10px;
+}
+
+div#logOut > p{
+  display: inline-block;
+  font-family: var(--poppins);
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+div#logOut > p#userName{
+ font-size: 0.9;
+ 
+ position: relative;
+ left: 0px;
+ top: -50px;
+}
+
+div#logOut> p#userFunction{
+  font-size: 0.8em;
+  
+  position: relative;
+  left: -110px;
+  top: -30px;
+
+  
+}
+
+ img#logOutImg{
+ 
+  position: absolute;
+  left: 20vw;
+  top: 92vh;
+
+  cursor: pointer;
+
+  transform: translate(-35px);
+  transition: left 0.3s;
+  transition-timing-function: ease;
+
+ 
+   
+}
+
+
+  

@@ -27,7 +27,7 @@ const paragraphs = document.getElementById('paragraphs') // display: none;
 let hide = true // Variável condicional
 
 function sidebar(){
-    if (hide){
+    if (hide && innerWidth <= 768){
         headerWidth.style = 'width: 20vw;';
         logoDiv.style = 'justify-content: center; width: 20vw;'
         logoImg.style = 'display: none'
@@ -51,7 +51,7 @@ function sidebar(){
         return;
     }
 
-    if (!hide){
+    if (!hide && innerWidth <= 768){
         headerWidth.style = 'width: 40vw;';
         logoDiv.style = 'justify-content: space-between; width: 40vw;'
         logoImg.style = 'display: inline'
@@ -73,6 +73,63 @@ function sidebar(){
 
         hide = true
         return;
+    }
+
+    if (hide && innerWidth > 768){
+        headerWidth.style = 'width: 150px;';
+        logoDiv.style = 'justify-content: center; width: 150px;'
+        logoImg.style = 'display: none'
+
+        list.style = 'align-items: center; width: 150px'
+        
+        dashboardLink.style = 'display: none;'
+        petsLink.style = 'display: none;'
+        clientsLink.style = 'display: none;'
+        vetLink.style = 'display: none;'
+        settingsLink.style = 'display: none;'
+
+        inputDiv.style = 'width: 50px; padding: 10px'
+        input.style = 'display: none'
+
+        profileDiv.style = 'width: 150px; justify-content: center;'
+        profileImg.style = 'display: none;'
+        paragraphs.style = 'display: none;'
+
+        hide = false
+        return;
+    }
+
+    if (!hide && innerWidth > 768){
+        headerWidth.style = 'width: 300px;';
+        logoDiv.style = 'justify-content: space-between; width: 300px;'
+        logoImg.style = 'display: inline'
+
+        list.style = 'align-items: flex-start;'
+        
+        dashboardLink.style = 'display: inline;'
+        petsLink.style = 'display: inline;'
+        clientsLink.style = 'display: inline;'
+        vetLink.style = 'display: inline;'
+        settingsLink.style = 'display:inline;'
+
+        inputDiv.style = 'width: 250px; padding: 12px 5px'
+        input.style = 'display: inline'
+
+        profileDiv.style = 'width: 300px; justify-content: spaceb-between;'
+        profileImg.style = 'display: inline;'
+        paragraphs.style = 'display: block;'
+
+        hide = true
+        return;
+    }
+}
+
+function screenSize(){   // Função para setar o width em 300px da sidebar quando vh > 768px
+    if (innerWidth > 768){
+        headerWidth.style = 'width: 300px;'
+        logoDiv.style = 'width: 300px;'
+        inputDiv.style = 'width: 250px;'
+        profileDiv.style = 'width: 300px;'
     }
 }
 

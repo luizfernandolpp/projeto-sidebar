@@ -3,8 +3,7 @@ const headerWidth = document.querySelector('header')
 const logoImg = document.querySelector('img#logoImg')
 const logoAndButton = document.querySelector('div#logoAndButton')
 
-const searchDiv = document.querySelector('#searchDiv')
-const itensList = document.querySelector('.itensList')
+
 
 const search = document.getElementById('searchItem')
 const dashboard = document.getElementById('dashboard')
@@ -25,8 +24,7 @@ function HideAndShow(){
         logoImg.style =  'display: flex;'
         logoAndButton.style = 'justify-content: space-between;'
         
-        searchDiv.style = 'justify-content: left; padding-left: 10px; gap: 10%;'
-        itensList.style = 'justify-content: left; gap: 10%;'
+       
 
         search.style = 'display: flex;'
         dashboard.style = 'display: flex;'

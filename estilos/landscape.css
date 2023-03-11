@@ -1,0 +1,34 @@
+@charset 'UTF-8';
+
+@media screen and (orientation: landscape){
+    body{
+        flex-direction: column;
+    }
+
+    header{
+        width: 100%;
+        height: 100px;
+
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header > div#logoAndButton{
+        flex-direction: column;
+        
+    }
+
+    div#logoAndBuntton > img#menuButton{
+        transform: 
+    }
+
+    nav > ul{
+        flex-direction: row;
+        height: 10px;
+        
+    }
+
+    
+
+}

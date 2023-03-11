@@ -1,45 +1,84 @@
-const headerWidth = document.querySelector('header')
+// Variáveis para a logo
+const headerWidth = document.querySelector('#header')   // width
+const logoDiv = document.getElementById('logoAndButton')    // justify-content: center; width
+const logoImg = document.getElementById('logoImg')  // display: none;
 
-const logoImg = document.querySelector('img#logoImg')
-const logoAndButton = document.querySelector('div#logoAndButton')
+// Variáveis para a lista
+
+const list = document.querySelector('ul') // align-items: center;
+
+// display: none;
+const dashboardLink = document.getElementById('dashboardLink')
+const petsLink = document.getElementById('petsLink')
+const clientsLink = document.getElementById('clientsLink')
+const vetLink = document.getElementById('vetLink')
+const settingsLink = document.getElementById('settingsLink')
+
+const inputDiv = document.getElementById('searchItem') // mexer no width
+const input = document.getElementById('isearch') // display: none;
 
 
+// Variáveis para o profile
 
-const search = document.getElementById('searchItem')
-const dashboard = document.getElementById('dashboard')
-const pets = document.getElementById('pets')
-const clients = document.getElementById('clients')
-const vets = document.getElementById('vets')
-const settings = document.getElementById('settings')
+const profileDiv = document.getElementById('profileAndLogOut') // mexer no width e setar -> justify-content: center;
+const profileImg = document.getElementById('profileImg') // display: none;
+const paragraphs = document.getElementById('paragraphs') // display: none;
 
-const userImg = document.querySelector('img#userPic')
-const paragraphs = document.querySelector('div#paragraphs')
-const logOutWidth = document.querySelector('div#logOut')
-let Hide = true
+let hide = true // Variável condicional
 
-function HideAndShow(){
-    if(Hide && window.innerWidth < 768){
-        headerWidth.style = 'width: 50vw;'
+function sidebar(){
+    if (hide){
+        headerWidth.style = 'width: 20vw;';
+        logoDiv.style = 'justify-content: center; width: 20vw;'
+        logoImg.style = 'display: none'
+
+        list.style = 'align-items: center;'
         
-        logoImg.style =  'display: flex;'
-        logoAndButton.style = 'justify-content: space-between;'
+        dashboardLink.style = 'display: none;'
+        petsLink.style = 'display: none;'
+        clientsLink.style = 'display: none;'
+        vetLink.style = 'display: none;'
+        settingsLink.style = 'display: none;'
+
+        inputDiv.style = 'width: 10vw; padding: 10px'
+        input.style = 'display: none'
+
+        profileDiv.style = 'width: 20vw; justify-content: center;'
+        profileImg.style = 'display: none;'
+        paragraphs.style = 'display: none;'
+
+        hide = false
+        return;
+    }
+
+    if (!hide){
+        headerWidth.style = 'width: 40vw;';
+        logoDiv.style = 'justify-content: space-between; width: 40vw;'
+        logoImg.style = 'display: inline'
+
+        list.style = 'align-items: flex-start;'
         
-       
+        dashboardLink.style = 'display: inline;'
+        petsLink.style = 'display: inline;'
+        clientsLink.style = 'display: inline;'
+        vetLink.style = 'display: inline;'
+        settingsLink.style = 'display:inline;'
 
-        search.style = 'display: flex;'
-        dashboard.style = 'display: flex;'
-        pets.style = 'display: flex;'
-        clients.style = 'display: flex;'
-        vets.style = 'display: flex;'
-        settings.style = 'display: flex;'
+        inputDiv.style = 'width: 35vw; padding: 12px 5px'
+        input.style = 'display: inline'
 
+        profileDiv.style = 'width: 40vw; justify-content: spaceb-between;'
+        profileImg.style = 'display: inline;'
+        paragraphs.style = 'display: block;'
 
-
-        logOutWidth.style = 'width: 50vw'
-        userImg.style = 'display: flex; width: 60px; height: 60px; border-radius: 10px;'
-        paragraphs.style = 'display: flex; flex-direction: column; position: relative; left: -10px; font-weight: bold;'
-
-        
-        
+        hide = true
+        return;
     }
 }
+
+
+
+
+
+
+

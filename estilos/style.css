@@ -37,9 +37,11 @@
     align-items: flex-start;
 
     width: 40vw;
-    
-
     background-color: var(--green);
+
+    transition: width 0.5s;
+    transition-timing-function: ease;
+
   }
 
   header > div#logoAndButton{
@@ -49,6 +51,9 @@
 
     width: 40vw;
     padding: 10px;
+
+    transition: width 0.5s;
+    transition-timing-function: ease;
     
   }
 
@@ -80,6 +85,8 @@
     font-weight: bold;
     text-decoration: none;
 
+
+
   }
 
   nav > ul > li > div#searchItem{
@@ -89,6 +96,9 @@
     
     background-color: var(--light-green);
     border-radius: 8px;
+
+    transition: width 0.3s;
+    transition-timing-function: ease;
   }
 
   div#searchItem > input{
@@ -133,6 +143,9 @@
     width: 40vw;
     background-color: var(--light-green);
     padding: 10px;
+
+    transition: width 0.5s;
+    transition-timing-function: ease;
   }
 
   header > div#profileAndLogOut > img#profileImg{

@@ -9,19 +9,19 @@
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div id="logoAndButton">
             <img id="logoImg" src="images/logo.svg" alt="VET. logo">
-            <img id="menuButton" src="images/menu.svg" alt="Menu Button">
+            <img id="menuButton" src="images/menu.svg" alt="Menu Button" onclick="sidebar()">
         </div>
         <nav>
             <ul>
                 <li> <div class="listItem" id="searchItem"><img src="images/search.svg" alt="Search Icon"><input type="text" name="search" id="isearch" placeholder="Buscar"></div></li>
-                <li> <div class="listItem"><img src="images/grid.svg" alt="Dashboard Icon"> <a href="index.html" target="home">Dashboard</a></div></li>
-                <li><div class="listItem"> <img src="images/pet.svg" alt="Pet Icon"> <a href="pets.html" target="home">Pets</a></div></li>
-                <li> <div class="listItem"><img src="images/user.svg" alt="User Icon"> <a href="clients.html" target="home">Clientes</a></div></li>
-                <li> <div class="listItem"><img src="images/vet.svg" alt="Vet Icon"> <a href="vet.html" target="home">Vets</a></div></li>
-                <li> <div class="listItem"><img src="images/settings.svg" alt="Settings Icon"><a href="settings.html" target="home"> Ajustes</a></div></li>
+                <li> <div class="listItem"><img src="images/grid.svg" alt="Dashboard Icon"> <a href="index.html" target="home"id="dashboardLink">Dashboard</a></div></li>
+                <li><div class="listItem"> <img src="images/pet.svg" alt="Pet Icon"> <a href="pets.html" target="home"id="petsLink">Pets</a></div></li>
+                <li> <div class="listItem"><img src="images/user.svg" alt="User Icon"> <a href="clients.html" target="home"id="clientsLink">Clientes</a></div></li>
+                <li> <div class="listItem"><img src="images/vet.svg" alt="Vet Icon"> <a href="vet.html" target="home"id="vetLink">Vets</a></div></li>
+                <li> <div class="listItem"><img src="images/settings.svg" alt="Settings Icon"><a href="settings.html" target="home"id="settingsLink"> Ajustes</a></div></li>
             </ul>
         </nav>
         <div id="profileAndLogOut">
@@ -38,5 +38,7 @@
             <h1>Dashboard</h1>
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

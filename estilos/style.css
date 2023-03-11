@@ -43,19 +43,24 @@
 
     font-family: var(--poppins);
     color: var(--text-color);
+
+    transition: width 0.3s;
+    transition-timing-function: ease;
     
   }
 
   header > div#logoAndButton{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 100px;
     cursor: pointer;
 
   }
 
   header > div#logoAndButton > img#logoImg{
-    
+    display: none;
+    transition: display 0.3s;
+    transition-timing-function: ease;
   }
   
 
@@ -72,8 +77,8 @@
 div#listDiv > div#searchDiv{
   display: flex;
   justify-content: center;
-  
   align-items: center;
+  gap: 10%;
   
   width: 55%;
   height: 60px;
@@ -130,6 +135,9 @@ div#logOut{
   padding-top: 10px;
   
   background-color: var(--light-green);
+
+  transition: width 0.3s;
+  transition-timing-function: ease;
   
   
 }

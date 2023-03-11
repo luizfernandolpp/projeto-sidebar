@@ -2,6 +2,18 @@
 
 @media screen and (min-width: 768px){
     
+    header > div#logoAndButton{
+        justify-content: space-between;
+    }
+
+    header > div#logoAndButton > img#logoImg{
+        display: flex;
+    }
+    
+    div#listDiv{
+        align-items: flex-start;
+    }
+
     div#listDiv > div#searchDiv{
         display: flex;
         justify-content: left;
@@ -35,15 +47,28 @@
         width: 60px;
         height: 60px;
         border-radius: 10px;
+
+        position: absolute;
+        top: 10px;
+        left: 20px;
       }
       
       div#logOut > div#paragraphs{
         display: flex;
         flex-direction: column;
 
-        position: relative;
-        left: -10px;
+        position: absolute;
+        top: 10px;
+        left: 100px;
         font-weight: bold;
+      }
+
+      div#logOut > img#logOutImg{
+        position: absolute;
+        top: 25px;
+        left: 25vw;
+        
+        transform: translateX(10px);
       }
       
       div#logOut > img#logOutImg:hover{

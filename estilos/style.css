@@ -36,7 +36,7 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    width: 40vw;
+    width: 200px;
     background-color: var(--green);
 
     transition: width 0.5s;
@@ -49,7 +49,7 @@
     flex-direction: row;
     justify-content: space-between;
 
-    width: 40vw;
+    width: 200px;
     padding: 10px;
 
     transition: width 0.5s;
@@ -90,7 +90,7 @@
   }
 
   nav > ul > li > div#searchItem{
-    width: 35vw;
+    width: 150px;
     height: 50px;
     padding: 12px 5px;
     
@@ -140,7 +140,7 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 40vw;
+    width: 200px;
     background-color: var(--light-green);
     padding: 10px;
 

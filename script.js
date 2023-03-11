@@ -6,6 +6,7 @@ const logoImg = document.getElementById('logoImg')  // display: none;
 // Variáveis para a lista
 
 const list = document.querySelector('ul') // align-items: center;
+const navBar = document.querySelector('nav')
 
 // display: none;
 const dashboardLink = document.getElementById('dashboardLink')
@@ -33,6 +34,7 @@ function sidebar(){                     // Função que mostra/esconde a sidebar
         logoImg.style = 'display: none'
 
         list.style = 'align-items: center;'
+        navBar.style = 'margin: 10px;'
         
         dashboardLink.style = 'display: none;'
         petsLink.style = 'display: none;'
@@ -124,8 +126,8 @@ function sidebar(){                     // Função que mostra/esconde a sidebar
     }
 }
 
-function screenSize(){   // Função para abrir a sidebar durante a transição p/ vw > 768px ou vw < 768px
-    if (innerWidth <= 768){
+function screenSize(){   // Função para abrir a sidebar sempre que a viewport tiver seu tamanho alterado
+    if (innerWidth < 768){
         headerWidth.style = 'width: 200px;';
         logoDiv.style = 'justify-content: space-between; width: 200px;'
         logoImg.style = 'display: inline'
@@ -145,8 +147,6 @@ function screenSize(){   // Função para abrir a sidebar durante a transição 
         profileImg.style = 'display: inline;'
         paragraphs.style = 'display: block;'
 
-        hide = true
-        return;
     }    
     if (innerWidth > 768){
         headerWidth.style = 'width: 300px;';
@@ -167,6 +167,7 @@ function screenSize(){   // Função para abrir a sidebar durante a transição 
         profileDiv.style = 'width: 300px; justify-content: spaceb-between;'
         profileImg.style = 'display: inline;'
         paragraphs.style = 'display: block;'
+
 
     }
 }

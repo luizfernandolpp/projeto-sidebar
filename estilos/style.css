@@ -75,6 +75,13 @@
     align-items: stretch;
   }
 
+  nav > ul > li > div.listItem > a{
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none;
+
+  }
+
   nav > ul > li > div#searchItem{
     width: 35vw;
     height: 50px;
@@ -119,7 +126,44 @@
   }
 
   header > div#profileAndLogOut{
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 40vw;
+    background-color: var(--light-green);
+    padding: 10px;
+  }
+
+  header > div#profileAndLogOut > img#profileImg{
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    border-radius: 8px;
+  }
+
+  header > div#profileAndLogOut > div#paragraphs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  div#paragraphs > p#userProfession{
+    font-size: 0.8em;
+  }
+
+  header > div#profileAndLogOut > img#logOutButton:hover{
+    transform: translate(2px, -2px);
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+
+  main{
+    padding: 5px;
+
+    color: var(--text-color);
   }
   
 

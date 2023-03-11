@@ -5,7 +5,7 @@ const logoAndButton = document.querySelector('div#logoAndButton')
 
 const searchDiv = document.querySelector('#searchDiv')
 const itensList = document.querySelector('.itensList')
-
+'''''''''''''''''''''''''''''''''''''''
 const search = document.getElementById('searchItem')
 const dashboard = document.getElementById('dashboard')
 const pets = document.getElementById('pets')

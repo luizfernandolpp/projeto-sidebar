@@ -126,7 +126,7 @@ function sidebar(){                     // Função que mostra/esconde a sidebar
     }
 }
 
-function screenSize(){   // Função para abrir a sidebar sempre que a viewport tiver seu tamanho alterado
+/* function screenSize(){   // Função para abrir a sidebar sempre que a viewport tiver seu tamanho alterado
     if (innerWidth < 768){
         headerWidth.style = 'width: 200px;';
         logoDiv.style = 'justify-content: space-between; width: 200px;'
@@ -172,7 +172,7 @@ function screenSize(){   // Função para abrir a sidebar sempre que a viewport 
     }
 }
 
-
+*/
 
 
 

@@ -52,7 +52,7 @@
     width: 200px;
     padding: 10px;
 
-    transition: width 0.5s;
+    transition: width 0.5s, justify-content 0.5s;
     transition-timing-function: ease;
     
   }
@@ -92,7 +92,7 @@
   nav > ul > li > div#searchItem{
     width: 150px;
     height: 50px;
-    padding: 12px 5px;
+    padding: 12px 10px;
     
     background-color: var(--light-green);
     border-radius: 8px;
@@ -160,11 +160,14 @@
     flex-direction: column;
     flex-wrap: nowrap;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.9em;
+  
+    position: absolute;
+    left: 75px;
   }
 
   div#paragraphs > p#userProfession{
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   header > div#profileAndLogOut > img#logOutButton:hover{

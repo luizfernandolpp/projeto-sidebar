@@ -45,16 +45,13 @@
   header > div#logoAndButton{
     display: flex;
     flex-direction: row;
-    justify-content: center;   /* Substituir para space-between no javascript */
+    justify-content: space-between;
 
     width: 40vw;
     padding: 10px;
     
   }
 
-  div#logoAndButton > img#logoImg{
-    display: none;                          /* Substituir para outro valor (inline-block?) no javascript  */
-  }
 
   div#logoAndButton > img#menuButton:hover{
    cursor: pointer;
@@ -119,6 +116,10 @@
     font-size: 1em;
     text-indent: 5px;
     color: var(--text-color);
+  }
+
+  header > div#profileAndLogOut{
+    
   }
   
 

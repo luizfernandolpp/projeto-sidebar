@@ -43,7 +43,7 @@ function sidebar(){                     // Função que mostra/esconde a sidebar
         inputDiv.style = 'width: 50px; padding: 10px'
         input.style = 'display: none'
 
-        profileDiv.style = 'width: 50px; justify-content: center;'
+        profileDiv.style = 'width: 150px; justify-content: center;'
         profileImg.style = 'display: none;'
         paragraphs.style = 'display: none;'
 

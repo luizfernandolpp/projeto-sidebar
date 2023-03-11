@@ -7,11 +7,11 @@
     <title>Vet</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
-<body>
+<body onresize="screenSize()">
     <header>
         <div id="logoAndButton">
             <img id="logoImg" src="images/logo.svg" alt="VET. logo">
-            <img id="menuButton" src="images/menu.svg" alt="Menu Button">
+            <img id="menuButton" src="images/menu.svg" alt="Menu Button" onclick="sidebar()">
         </div>
         <nav>
             <ul>
@@ -37,5 +37,7 @@
             <h1>Vet</h1>
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

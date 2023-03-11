@@ -126,8 +126,29 @@ function sidebar(){                     // Função que mostra/esconde a sidebar
     }
 }
 
-function screenSize(){   // Função para abrir a sidebar sempre que a viewport tiver seu tamanho alterado
-    if (hide && innerWidth === 768){
+function screenSize(){   // Função para redimensionar a sidebar de acordo com a viewport width (usando 768px como referência)
+    if (hide && innerWidth <= 768){
+        headerWidth.style = 'width: 200px;';
+        logoDiv.style = 'justify-content: space-between; width: 200px;'
+        logoImg.style = 'display: inline'
+
+        list.style = 'align-items: flex-start;'
+        
+        dashboardLink.style = 'display: inline;'
+        petsLink.style = 'display: inline;'
+        clientsLink.style = 'display: inline;'
+        vetLink.style = 'display: inline;'
+        settingsLink.style = 'display:inline;'
+
+        inputDiv.style = 'width: 150px; padding: 12px 5px'
+        input.style = 'display: inline'
+
+        profileDiv.style = 'width: 200px; justify-content: spaceb-between;'
+        profileImg.style = 'display: inline;'
+        paragraphs.style = 'display: block;'
+    }
+
+    if(!hide && innerWidth <= 768){
         headerWidth.style = 'width: 100px;';
         logoDiv.style = 'justify-content: center; width: 100px;'
         logoImg.style = 'display: none'
@@ -147,63 +168,11 @@ function screenSize(){   // Função para abrir a sidebar sempre que a viewport 
         profileDiv.style = 'width: 100px; justify-content: center;'
         profileImg.style = 'display: none;'
         paragraphs.style = 'display: none;'
-
-        hide = false
-        return;
-    }
-
-    if(!hide && innerWidth === 768){
-        headerWidth.style = 'width: 200px;';
-        logoDiv.style = 'justify-content: space-between; width: 200px;'
-        logoImg.style = 'display: inline'
-
-        list.style = 'align-items: flex-start;'
-        
-        dashboardLink.style = 'display: inline;'
-        petsLink.style = 'display: inline;'
-        clientsLink.style = 'display: inline;'
-        vetLink.style = 'display: inline;'
-        settingsLink.style = 'display:inline;'
-
-        inputDiv.style = 'width: 150px; padding: 12px 5px'
-        input.style = 'display: inline'
-
-        profileDiv.style = 'width: 200px; justify-content: spaceb-between;'
-        profileImg.style = 'display: inline;'
-        paragraphs.style = 'display: block;'
-
-        hide = true
-        return
+    
     }
     
     
     if (hide && innerWidth > 768){
-        headerWidth.style = 'width: 150px;';
-        logoDiv.style = 'justify-content: center; width: 150px;'
-        logoImg.style = 'display: none'
-
-        list.style = 'align-items: center; width: 150px'
-        
-        dashboardLink.style = 'display: none;'
-        petsLink.style = 'display: none;'
-        clientsLink.style = 'display: none;'
-        vetLink.style = 'display: none;'
-        settingsLink.style = 'display: none;'
-
-        inputDiv.style = 'width: 50px; padding: 10px'
-        input.style = 'display: none'
-
-        profileDiv.style = 'width: 150px; justify-content: center;'
-        profileImg.style = 'display: none;'
-        paragraphs.style = 'display: none;'
-
-        hide = false
-        return;
-
-
-    }
-
-    if (!hide && innerWidth > 768){
         headerWidth.style = 'width: 300px;';
         logoDiv.style = 'justify-content: space-between; width: 300px;'
         logoImg.style = 'display: inline'
@@ -223,8 +192,30 @@ function screenSize(){   // Função para abrir a sidebar sempre que a viewport 
         profileImg.style = 'display: inline;'
         paragraphs.style = 'display: block;'
 
-        hide = true
-        return;
+       
+
+
+    }
+
+    if (!hide && innerWidth > 768){
+        headerWidth.style = 'width: 150px;';
+        logoDiv.style = 'justify-content: center; width: 150px;'
+        logoImg.style = 'display: none'
+
+        list.style = 'align-items: center; width: 150px'
+        
+        dashboardLink.style = 'display: none;'
+        petsLink.style = 'display: none;'
+        clientsLink.style = 'display: none;'
+        vetLink.style = 'display: none;'
+        settingsLink.style = 'display: none;'
+
+        inputDiv.style = 'width: 50px; padding: 10px'
+        input.style = 'display: none'
+
+        profileDiv.style = 'width: 150px; justify-content: center;'
+        profileImg.style = 'display: none;'
+        paragraphs.style = 'display: none;'
     }
 }
 

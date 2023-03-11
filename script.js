@@ -30,7 +30,7 @@ let hide = true // Variável condicional
 function sidebar(){                     // Função que mostra/esconde a sidebar
     if (hide && innerWidth <= 768){
         headerWidth.style = 'width: 100px;';
-        logoDiv.style = 'justify-content: center; width: 20vw;'
+        logoDiv.style = 'justify-content: center; width: 100px;'
         logoImg.style = 'display: none'
 
         list.style = 'align-items: center;'
@@ -126,8 +126,33 @@ function sidebar(){                     // Função que mostra/esconde a sidebar
     }
 }
 
-/* function screenSize(){   // Função para abrir a sidebar sempre que a viewport tiver seu tamanho alterado
-    if (innerWidth < 768){
+function screenSize(){   // Função para abrir a sidebar sempre que a viewport tiver seu tamanho alterado
+    if (hide && innerWidth === 768){
+        headerWidth.style = 'width: 100px;';
+        logoDiv.style = 'justify-content: center; width: 100px;'
+        logoImg.style = 'display: none'
+
+        list.style = 'align-items: center;'
+        navBar.style = 'margin: 10px;'
+        
+        dashboardLink.style = 'display: none;'
+        petsLink.style = 'display: none;'
+        clientsLink.style = 'display: none;'
+        vetLink.style = 'display: none;'
+        settingsLink.style = 'display: none;'
+
+        inputDiv.style = 'width: 50px; padding: 10px'
+        input.style = 'display: none'
+
+        profileDiv.style = 'width: 100px; justify-content: center;'
+        profileImg.style = 'display: none;'
+        paragraphs.style = 'display: none;'
+
+        hide = false
+        return;
+    }
+
+    if(!hide && innerWidth === 768){
         headerWidth.style = 'width: 200px;';
         logoDiv.style = 'justify-content: space-between; width: 200px;'
         logoImg.style = 'display: inline'
@@ -147,8 +172,38 @@ function sidebar(){                     // Função que mostra/esconde a sidebar
         profileImg.style = 'display: inline;'
         paragraphs.style = 'display: block;'
 
-    }    
-    if (innerWidth > 768){
+        hide = true
+        return
+    }
+    
+    
+    if (hide && innerWidth > 768){
+        headerWidth.style = 'width: 150px;';
+        logoDiv.style = 'justify-content: center; width: 150px;'
+        logoImg.style = 'display: none'
+
+        list.style = 'align-items: center; width: 150px'
+        
+        dashboardLink.style = 'display: none;'
+        petsLink.style = 'display: none;'
+        clientsLink.style = 'display: none;'
+        vetLink.style = 'display: none;'
+        settingsLink.style = 'display: none;'
+
+        inputDiv.style = 'width: 50px; padding: 10px'
+        input.style = 'display: none'
+
+        profileDiv.style = 'width: 150px; justify-content: center;'
+        profileImg.style = 'display: none;'
+        paragraphs.style = 'display: none;'
+
+        hide = false
+        return;
+
+
+    }
+
+    if (!hide && innerWidth > 768){
         headerWidth.style = 'width: 300px;';
         logoDiv.style = 'justify-content: space-between; width: 300px;'
         logoImg.style = 'display: inline'
@@ -168,11 +223,12 @@ function sidebar(){                     // Função que mostra/esconde a sidebar
         profileImg.style = 'display: inline;'
         paragraphs.style = 'display: block;'
 
-
+        hide = true
+        return;
     }
 }
 
-*/
+
 
 
 

@@ -28,7 +28,7 @@ let hide = true // Variável condicional
 
 function sidebar(){
     if (hide && innerWidth <= 768){
-        headerWidth.style = 'width: 20vw;';
+        headerWidth.style = 'width: 100px;';
         logoDiv.style = 'justify-content: center; width: 20vw;'
         logoImg.style = 'display: none'
 
@@ -40,10 +40,10 @@ function sidebar(){
         vetLink.style = 'display: none;'
         settingsLink.style = 'display: none;'
 
-        inputDiv.style = 'width: 10vw; padding: 10px'
+        inputDiv.style = 'width: 50px; padding: 10px'
         input.style = 'display: none'
 
-        profileDiv.style = 'width: 20vw; justify-content: center;'
+        profileDiv.style = 'width: 50px; justify-content: center;'
         profileImg.style = 'display: none;'
         paragraphs.style = 'display: none;'
 
@@ -52,8 +52,8 @@ function sidebar(){
     }
 
     if (!hide && innerWidth <= 768){
-        headerWidth.style = 'width: 40vw;';
-        logoDiv.style = 'justify-content: space-between; width: 40vw;'
+        headerWidth.style = 'width: 200px;';
+        logoDiv.style = 'justify-content: space-between; width: 200px;'
         logoImg.style = 'display: inline'
 
         list.style = 'align-items: flex-start;'
@@ -64,10 +64,10 @@ function sidebar(){
         vetLink.style = 'display: inline;'
         settingsLink.style = 'display:inline;'
 
-        inputDiv.style = 'width: 35vw; padding: 12px 5px'
+        inputDiv.style = 'width: 150px; padding: 12px 5px'
         input.style = 'display: inline'
 
-        profileDiv.style = 'width: 40vw; justify-content: spaceb-between;'
+        profileDiv.style = 'width: 200px; justify-content: spaceb-between;'
         profileImg.style = 'display: inline;'
         paragraphs.style = 'display: block;'
 
@@ -125,6 +125,12 @@ function sidebar(){
 }
 
 function screenSize(){   // Função para setar o width em 300px da sidebar quando vh > 768px
+    if (innerWidth <= 768){
+        headerWidth.style = 'width: 200px;'
+        logoDiv.style = 'width: 200px;'
+        inputDiv.style = 'width: 150px;'
+        profileDiv.style = 'width: 200px;'
+    }    
     if (innerWidth > 768){
         headerWidth.style = 'width: 300px;'
         logoDiv.style = 'width: 300px;'

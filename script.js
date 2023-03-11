@@ -26,7 +26,7 @@ const paragraphs = document.getElementById('paragraphs') // display: none;
 
 let hide = true // Variável condicional
 
-function sidebar(){
+function sidebar(){                     // Função que mostra/esconde a sidebar
     if (hide && innerWidth <= 768){
         headerWidth.style = 'width: 100px;';
         logoDiv.style = 'justify-content: center; width: 20vw;'
@@ -124,18 +124,50 @@ function sidebar(){
     }
 }
 
-function screenSize(){   // Função para setar o width em 300px da sidebar quando vh > 768px
+function screenSize(){   // Função para abrir a sidebar durante a transição p/ vw > 768px ou vw < 768px
     if (innerWidth <= 768){
-        headerWidth.style = 'width: 200px;'
-        logoDiv.style = 'width: 200px;'
-        inputDiv.style = 'width: 150px;'
-        profileDiv.style = 'width: 200px;'
+        headerWidth.style = 'width: 200px;';
+        logoDiv.style = 'justify-content: space-between; width: 200px;'
+        logoImg.style = 'display: inline'
+
+        list.style = 'align-items: flex-start;'
+        
+        dashboardLink.style = 'display: inline;'
+        petsLink.style = 'display: inline;'
+        clientsLink.style = 'display: inline;'
+        vetLink.style = 'display: inline;'
+        settingsLink.style = 'display:inline;'
+
+        inputDiv.style = 'width: 150px; padding: 12px 5px'
+        input.style = 'display: inline'
+
+        profileDiv.style = 'width: 200px; justify-content: spaceb-between;'
+        profileImg.style = 'display: inline;'
+        paragraphs.style = 'display: block;'
+
+        hide = true
+        return;
     }    
     if (innerWidth > 768){
-        headerWidth.style = 'width: 300px;'
-        logoDiv.style = 'width: 300px;'
-        inputDiv.style = 'width: 250px;'
-        profileDiv.style = 'width: 300px;'
+        headerWidth.style = 'width: 300px;';
+        logoDiv.style = 'justify-content: space-between; width: 300px;'
+        logoImg.style = 'display: inline'
+
+        list.style = 'align-items: flex-start;'
+        
+        dashboardLink.style = 'display: inline;'
+        petsLink.style = 'display: inline;'
+        clientsLink.style = 'display: inline;'
+        vetLink.style = 'display: inline;'
+        settingsLink.style = 'display:inline;'
+
+        inputDiv.style = 'width: 250px; padding: 12px 5px'
+        input.style = 'display: inline'
+
+        profileDiv.style = 'width: 300px; justify-content: spaceb-between;'
+        profileImg.style = 'display: inline;'
+        paragraphs.style = 'display: block;'
+
     }
 }
 

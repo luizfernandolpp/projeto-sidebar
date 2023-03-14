@@ -19,8 +19,12 @@
         width: 300px;
     }
 
+   
+    
    header > div#profileAndLogOut > div#paragraphs{
     font-size: 1em;
+    flex-grow: 1;
+    
    }
 
    div#paragraphs > p#userProfession{

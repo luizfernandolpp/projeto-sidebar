@@ -1,6 +1,6 @@
 @charset 'UTF-8';
 
-@media screen and (orientation: landscape){
+@media screen and (max-height:334px){
     body{
         flex-direction: column;
     }
@@ -19,9 +19,7 @@
         
     }
 
-    div#logoAndBuntton > img#menuButton{
-        transform: 
-    }
+    
 
     nav > ul{
         flex-direction: row;

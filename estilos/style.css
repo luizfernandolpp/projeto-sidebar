@@ -18,11 +18,11 @@
     box-sizing: border-box;
   }
 
-  body,html{
+  body{
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 1200px;
+    height: 100vh;
     
     background-color: var(--body-bg-color);
 

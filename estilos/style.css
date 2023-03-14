@@ -18,7 +18,7 @@
     box-sizing: border-box;
   }
 
-  body{
+  body,html{
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -37,6 +37,7 @@
     align-items: flex-start;
 
     width: 200px;
+    height: 100vh;
     
     background-color: var(--green);
 
@@ -183,7 +184,7 @@
 
   main{
     padding: 5px;
-
+    height: 100vh;
     color: var(--text-color);
   }
   

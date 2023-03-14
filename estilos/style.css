@@ -46,9 +46,7 @@
 
   }
 
-  header:nth-child(3){
-    flex-basis: 0px;
-  }
+
 
 
   header > div#logoAndButton{
